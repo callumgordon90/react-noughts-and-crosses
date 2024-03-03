@@ -1,18 +1,34 @@
 import React from 'react';
 
 
-export default function Square() {
+///////////////////////////
+
+function Square(){
+  return <button className="square">1</button>;
+}
+
+/////////////////////////////////////
+
+export default function Board() {
   return (
     <React.Fragment>
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
+      <div className="board-row">
+       <Square />
+       <Square />
+       <Square />
+      </div>
+
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+      
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
     </React.Fragment>
   );
 }
